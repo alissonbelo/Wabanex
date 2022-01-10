@@ -4,7 +4,7 @@ defmodule Wabanex.Users.Get do
 
   def call(id) do
     id
-    |> Ecto.UUID.cast()
+    |> UUID.cast()
     |> handle_response()
   end
 
